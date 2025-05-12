@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 600px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+            padding: 25px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row input {
+            width: 100%;
+        }
+
+        .submit-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .submit-row button {
+            padding: 10px 20px;
+            background-color: #33b5e5;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .note {
+            font-size: 12px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Get in touch with us by filling contact form below</h2>
+        <form>
+            <div class="row">
+                <input type="text" placeholder="* Enter your full name" required>
+                <input type="email" placeholder="* Enter your email address" required>
+            </div>
+            <input type="text" placeholder="Enter your subject">
+            <textarea placeholder="* Your message here..." required></textarea>
+            <div class="submit-row">
+                <button type="submit">Send message</button>
+                <span class="note">* Please fill all required form field, thanks!</span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
